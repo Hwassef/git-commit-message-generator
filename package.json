@@ -1,0 +1,54 @@
+{
+  "name": "branch-and-commit-helper",
+  "displayName": "Branch and Commit Helper",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateBranchName",
+        "title": "Generate Branch Name",
+        "category": "Git Helper"
+      },
+      {
+        "command": "extension.generateCommitMessage",
+        "title": "Generate Commit Message",
+        "category": "Git Helper"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "package": "vsce package",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.8",
+    "@types/node": "^20.17.6",
+    "@types/node-fetch": "^2.6.12",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.11.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vsce": "^2.7.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "simple-git": "^3.27.0"
+  }
+}
