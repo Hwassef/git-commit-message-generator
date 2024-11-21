@@ -3,6 +3,10 @@
   "displayName": "Branch and Commit Helper",
   "description": "",
   "version": "0.0.1",
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/Hwassef/git-commit-message-generator"
+  },
   "engines": {
     "vscode": "^1.95.0"
   },
