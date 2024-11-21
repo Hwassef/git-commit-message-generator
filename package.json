@@ -1,7 +1,8 @@
 {
   "name": "branch-and-commit-helper",
   "displayName": "Branch and Commit Helper",
-  "description": "",
+  "description": "Git Commit Message Generator",
+  "publisher": "hassine-wassef",
   "version": "0.0.1",
   "repository": {
   "type": "git",
